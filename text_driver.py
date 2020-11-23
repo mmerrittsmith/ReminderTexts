@@ -3,14 +3,12 @@ import config
 from twilio.rest import Client
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-r',
-                    '--recipient', 
+parser.add_argument('-r', '--recipient', 
                     help='Key of the recipient in the \
                           Recipients dict, currently \
                           one of {"SO", "Self"}.',
                     type=str)
-parser.add_argument('-m',
-                    '--message',
+parser.add_argument('-m', '--message',
                     help='String message that you want \
                           to send. Can be a string key \
                           to the messages dict.',
